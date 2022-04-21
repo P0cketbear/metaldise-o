@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>METALDISEÑO LTDA</title>
+    <link rel="stylesheet" href="../Metaldiseño/Recursos/Estilos/style.css">
+</head>
+
+<body>
+    <div class="full_body">
+        <div>
+            <header>
+                <div class="header">
+                    <div>
+                        <a href=""><img class="logo" src="Recursos/Imagenes/logor.png" alt="logo"></a>
+                        <!--style="width: 261px; height: 79px;"-->
+                    </div>
+                    <div>
+                        <nav>
+                            <ul class="navbar__ul">
+                                <div>
+                                    <li><a href="">METALDISEÑO</a></li>
+                                </div>
+                                <div>
+                                    <li><a href="#us">NOSOTROS</a></li>
+                                </div>
+                                <div>
+                                    <li><a href="#works">NUESTROS TRABAJOS</a></li>
+                                </div>
+                                <div>
+                                    <li><a href="#clients">NUESTROS CLIENTES</a></li>
+                                </div>
+                                <div>
+                                    <li><a href="#contact">CONTACTO</a></li>
+                                </div>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <div>
+            <div>
+                <h1 id="us">NOSOTROS</h1>
+            </div>
+            <div>
+                <p> <b>Metal Diseño Chile Ltda.</b> Nace de maestranzas RAS Tomando la experiencia de más de 40 años en
+                    el
+                    rubro de
+                    la carpintería metálica
+                    Prestando nuestros servicios a las más prestigiosas Empresas de ascensores y constructoras; además
+                    ofrecemos nuestros servicios a edificios y comunidades en general a lo largo de nuestro país.
+                    <br>
+                    Desarrollamos y ejecutamos proyectos para el mejoramiento y estética para ascensores y montacargas,
+                    muebles metálicos en general asi como terminaciones en acero inoxidable, madera, bronce, fierro,
+                    electro
+                    pintado y cambio de iluminaciones a sistema led.
+                    <br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, porro explicabo. Dolores, aperiam
+                    quis deleniti labore saepe natus quibusdam numquam blanditiis eveniet totam ipsa dicta provident
+                    veniam
+                    perspiciatis. Voluptatibus, sed!
+                </p>
+            </div>
+        </div>
+        <div class="trabajos">
+            <div class="trabajos__titulo">
+                <h1 id="works">NUESTROS TRABAJOS</h1>
+            </div>
+            <div class="trabajos__img">
+                <ul>
+                    <img id="trabajos" src="recursos/Imagenes/ascensor1.png" alt="ascensores">
+                    <img id="trabajos" src="recursos/Imagenes/botonera.png" alt="botonera">
+                    <img id="trabajos" src="recursos/Imagenes/cabina.png" alt="cabina">
+                    <img id="trabajos" src="recursos/Imagenes/escalera1.png" alt="escalera">
+                    <img id="trabajos" src="recursos/Imagenes/totem.png" alt="totem">
+                </ul>
+            </div>
+        </div>
+        <div>
+            <div>
+                <h1 id="clients">NUESTROS CLIENTES</h1>
+            </div>
+            <div>
+                <ul>
+                    <img id="clientes" src="recursos/Imagenes/clients/aero.jpg" alt="Aeropuerto Nuevo Pudahuel">
+                    <img id="clientes" src="recursos/Imagenes/clients/metro.jpg" alt="Metro de Santiago">
+                    <img id="clientes" src="recursos/Imagenes/clients/otis.png" alt="Otis">
+                    <img id="clientes" src="recursos/Imagenes/clients/schindler.png" alt="Schindler Ascensores">
+                    <img id="clientes" src="recursos/Imagenes/clients/thyssenkrupp.png" alt="Thyssenkrupp">
+                </ul>
+            </div>
+        </div>
+            <div>
+                <h1 id="contact">CONTACTO</h1>
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr);">
+                <!--         <div>
+                    <h3>COTIZE CON NOSOTROS</h3>
+                </div>-->
+                <div>
+                    <form action="">
+                        <ul>
+                            <h3>COTIZE CON NOSOTROS</h3>
+
+                            <li> <label for="nombre">Nombre:</label>
+                                <input type="text" id="nombre" name="user_name" required="">
+                            </li>
+                            <br>
+                            <li> <label for="apellido">Apellido:</label>
+                                <input type="text" id="apellido" name="user_lastname" required="">
+                            </li>
+                            <br>
+                            <li> <label for="email">Email:</label>
+                                <input type="email" id="email" name="user_mail" required="">
+                            </li>
+                            <br>
+                            <li><label for="fecha">Indique la fecha para la que desea los productos:</label></li>
+                            <li>
+                                <input type="date" name="fecha_de_entrega" id="fecha" required="">
+                            </li>
+                            <br>
+                            <li>
+                                <label> Dirección de entrega:</label>
+                            </li>
+                            <br>
+                            <li>
+                                <label for="calle">Calle/Avenida</label>
+                                <input type="text" name="direccion" id="calle" placeholder="Escriba su calle o avenida"
+                                    required="">
+                            </li>
+                            <br>
+                            <li>
+                                <label for="numeracion"> #:</label>
+                                <input style="width: 50%;" type="number" name="numeracion" id="numero" placeholder="0000000" required=""
+                                    min="1" max="7">
+                            </li>
+                            <br>
+                            <li>
+                                <label for="region"> Región:</label>
+                                <select name="region" id="region">
+                                    <option value=" Arica y Parinacota"> Arica y Parinacota</option>
+                                    <option value=" Tarapacá"> Tarapacá</option>
+                                    <option value=" Antofagasta"> Antofagasta</option>
+                                    <option value=" Atacama"> Atacama</option>
+                                    <option value=" Coquimbo"> Coquimbo</option>
+                                    <option value=" Valparaíso"> Valparaíso</option>
+                                    <option value="Región Metropolitana">Región Metropolitana</option>
+                                    <option value="O'Higgins">O'Higgins</option>
+                                    <option value="Maule">Maule</option>
+                                    <option value="Biobío">Biobío</option>
+                                    <option value=" La Araucanía"> La Araucanía</option>
+                                    <option value=" Los Ríos"> Los Ríos</option>
+                                    <option value=" Los Lagos"> Los Lagos</option>
+                                    <option value=" Aysén"> Aysén</option>
+                                    <option value=" Magallanes"> Magallanes</option>
+                                  </select>
+                            </li>
+                            <br>
+                            <li>
+                                <label for="comuna"> Comuna:</label>
+                                <input type="text" name="comuna" id="comuna" placeholder="Comuna" required="">
+                            </li>
+                            <br>
+                            <li> <label>Material a cotizar:</label>
+                            </li>
+                            <li><input type="radio" name="material" id="galv" value="Galvanizado" required=""> <label
+                                    for="galv">Galvanizado</label>
+                            </li>
+                            <li><input type="radio" name="material" id="inox" value="Galvanizado" required=""> <label
+                                    for="inox">Inoxidable</label>
+                            </li>
+                            <li><input type="radio" name="material" id="alum" value="Galvanizado" required=""> <label
+                                    for="alum">Aluminio</label>
+                            </li>
+                            <li><input type="radio" name="material" id="all" value="todos" required=""> <label
+                                    for="all">Todos</label> 
+                            </li>
+                            <br>
+                            <li> <label for="msj">Que productos desea cotizar:</label>
+                            </li>
+                            <br>
+                            <li>
+                                <textarea name="user_msg" id="msj" cols="40" rows="10" required=""></textarea>
+                            </li>
+                            <br>
+                            <li>
+                                <label for="publi">Deseo recibir publicidad y promociones de parte de <b>Metal Diseño
+                                        Chile
+                                        Ltda.</b></label> <input type="checkbox" name="publicidad" id="publi">
+                            </li>
+                            <br>
+                            <li class="button">
+                                <input type="submit" value="Enviar">
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+                <div>
+                    <table>
+                        <tr>
+                            <th>NUESTROS TELÉFONOS</th>
+                        </tr>
+                        <tr>
+                            <td> +569 99999999 <a target="blank"
+                                    href="https://wa.me/+56951154294?text=Mensaje%20predeterminado"><img
+                                        style="height: 26px; width: 26px;"
+                                        src="../Metaldiseño/Recursos/Imagenes/Whatsapp.png" alt="whatsapp"></a></td>
+                        </tr>
+                        <tr>
+                            <td> +569 99999999 <a target="blank"
+                                    href="https://wa.me/+56951154294?text=Mensaje%20predeterminado"><img
+                                        style="height: 26px; width: 26px;"
+                                        src="../Metaldiseño/Recursos/Imagenes/Whatsapp.png" alt="whatsapp"></a></td>
+                        </tr>
+                        <tr>
+                            <td> +569 99999999 <a target="blank"
+                                    href="https://wa.me/+56951154294?text=Mensaje%20predeterminado"><img
+                                        style="height: 26px; width: 26px;"
+                                        src="../Metaldiseño/Recursos/Imagenes/Whatsapp.png" alt="whatsapp"></a></td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.685582140689!2d-70.71023408432396!3d-33.431440703924025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c40cfd166485%3A0x8daffc897ad1a029!2sSta.%20In%C3%A9s%201559%2C%20Quinta%20Normal%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses-419!2scl!4v1650246527255!5m2!1ses-419!2scl"
+                        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div>
+                <footer>
+                    <div class="navbar">
+                        <nav>
+                            <ul class="navbar__ul">
+                                <div>
+                                    <li><a href="">METALDISEÑO</a></li>
+                                </div>
+                                <div>
+                                    <li><a href="#us">NOSOTROS</a></li>
+                                </div>
+                                <div>
+                                    <li><a href="#works">NUESTROS TRABAJOS</a></li>
+                                </div>
+                                <div>
+                                    <li><a href="#clients">NUESTROS CLIENTES</a></li>
+                                </div>
+                                <div>
+                                    <li><a href="#contact">CONTACTO</a></li>
+                                </div>
+                            </ul>
+                    </div>
+
+                </footer>
+            </div>      
+</body>
+
+</html>

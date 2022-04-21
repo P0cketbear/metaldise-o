@@ -1,0 +1,65 @@
+/*
+Style
+#fcfcfc
+#e8212d
+#eb4e4f
+#ee7b711
+#f2a894 
+
+*/
+* {
+    background-color: #fcfcfc;
+    font-family: Helvetica, sans-serif;
+}
+
+a {
+    color: #e8212d;
+}
+
+h1:hover {
+    color: #e8212d;
+}
+/*
+ul {
+    display: inline;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+} */
+
+#clientes {
+    max-width: 300px;
+    max-height: auto;
+}
+
+#trabajos {
+    max-height: 300px;
+    max-width: auto;
+}
+
+div {
+    max-width: 90%;
+    max-height: fit-content;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+ 
+ 
+.header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+ 
+ 
+.navbar__ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+} 
+
+.logo{
+    max-height: 85px;
+    max-width: fit-content;
+}
