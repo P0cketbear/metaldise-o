@@ -1,2 +1,2 @@
 # metaldise-o
-pratica haciendo página de metal diseño.
+practica haciendo página de metal diseño.
