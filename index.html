@@ -21,6 +21,8 @@
     <!-- font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
+    <!-- PageClip -->
+    <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
 
     <title>METALDISEÑO LTDA</title>
 </head>
@@ -42,102 +44,8 @@
                     <li class="nav-item"><a class="nav-link" href="../metaldise-o/index.html#works">Productos</a></li>
                     <li class="nav-item"><a class="nav-link" href="../metaldise-o/index.html#clients">Clientes</a></li>
                     <li class="nav-item"><a class="nav-link" href="../metaldise-o/index.html#contact">Contacto</a></li>
-                    <li><button type="button" class="btn btn-outline-danger  fw-bold border rounded-pill" data-bs-toggle="modal"
-                            data-bs-target="#cotizar">
-                            COTIZA AQUÍ
-                        </button>
-                        <li><button onclick="Indicadores()" class="btn btn-outline-success fw-bold border rounded-pill">INDICADORES</button></li>
-                        <!--Modal -->
-                        <div class="modal fade" id="cotizar" data-bs-backdrop="static" data-bs-keyboard="false">
-                            <div class="modal-dialog ">
-                                <div class="modal-content">
-
-                                    <!-- Modal Header -->
-                                    <div class="modal-header">
-                                        <h4 class="modal-title">SOLICITUD DE COTIZACIÓN</h4>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                                    </div>
-
-                                    <!-- Modal body -->
-                                    <div class="modal-body">
-                                        <form action="" class="was-validated">
-                                            <div class="row">
-                                                <div class="col">
-                                                    <label for="nombre" class="form-label">Nombre:</label>
-                                                    <input type="text" class="form-control" id="nombre" name="user_name"
-                                                        placeholder="Nombre:" required="">
-                                                    <div class="invalid-feedback">Escriba su nombre</div>
-                                                </div>
-                                                <div class="col">
-                                                    <label for="apellido" class="form-label">Apellido:</label>
-                                                    <input type="text" class="form-control" placeholder="Apellido:"
-                                                        id="apellido" name="user_lastname" required="">
-                                                    <div class="invalid-feedback">Escriba su Apellido</div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col">
-                                                    <label for="email" class="form-label">Email:</label>
-                                                    <input type="email" class="form-control" placeholder="Email:"
-                                                        id="email" name="user_mail" required="">
-                                                    <div class="invalid-feedback">Escriba su Correo</div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <label class="form-label offset-4">Material a cotizar:</label>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col"><input type="radio" class="form-check-input"
-                                                        name="material" id="galv" value="Galvanizado" required="">
-                                                    <label for="galv" class="form-label">Galvanizado</label>
-                                                </div>
-                                                <div class="col"><input type="radio" class="form-check-input"
-                                                        name="material" id="inox" value="Galvanizado" required="">
-                                                    <label for="inox" class="form-label">Inoxidable</label>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col"><input type="radio" class="form-check-input"
-                                                        name="material" id="alum" value="Galvanizado" required="">
-                                                    <label for="alum" class="form-label">Aluminio</label>
-                                                </div>
-                                                <div class="col"><input type="radio" class="form-check-input"
-                                                        name="material" id="all" value="todos" required="">
-                                                    <label for="all" class="form-label">Todos</label>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <label for="msj" class="form-label">Que servicios desea cotizar:</label>
-                                                <textarea class="form-control" placeholder="Mensaje:" name="user_msg"
-                                                    id="msj" cols="40" rows="10" required=""></textarea>
-                                                <div class="invalid-feedback">Escriba su mensaje</div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-10">
-                                                    <label for="publi">Deseo recibir publicidad y promociones de parte
-                                                        de <b>MetalDiseño Chile Ltda.</b></label>
-                                                </div>
-                                                <div class="col">
-                                                    <input type="checkbox" name="publicidad" id="publi">
-                                                </div>
-                                            </div>
-                                            <div>
-                                                <button type="submit"
-                                                    class="btn btn-primary border rounded-pill fw-bold">Enviar</button>
-                                            </div>
-
-                                        </form>
-                                    </div>
-
-                                    <!-- Modal footer -->
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-danger"
-                                            data-bs-dismiss="modal">Cerrar</button>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
+                    <li><button onclick="Indicadores()"
+                            class="btn btn-outline-success fw-bold border rounded-pill">INDICADORES FINANCIEROS</button>
                     </li>
                 </ul>
             </div>
@@ -300,74 +208,110 @@
             </div>
 
         </div>
-        <div class="row map-box">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.6854096492707!2d-70.71023408255617!3d-33.43144519999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c4412cd10e51%3A0x1f423551445af77b!2sMetal%20Dise%C3%B1o!5e0!3m2!1sen!2scl!4v1653845401795!5m2!1sen!2scl"
-                width="1080" height="400" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="row" map-box>
+
+            <div class="col-lg-6 ">
+                <iframe class="mb-4 mb-lg-0"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.6854096492707!2d-70.71023408255617!3d-33.43144519999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c4412cd10e51%3A0x1f423551445af77b!2sMetal%20Dise%C3%B1o!5e0!3m2!1sen!2scl!4v1653845401795!5m2!1sen!2scl"
+                    width=100% height="384px" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="col-lg-6">
+                <form action="" onsubmit="return validarDatos()">
+                    <div class="form-group">
+                        <input class="form-control" type="text" name="nombre" id="nombre"
+                            placeholder="Nombre: " required>
+                        <p class="text-danger" style="display:none" id="errorNombre">El largo del nombre debe ser
+                            superior a 2 </p>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <input class="form-control" type="text" name="apellido" id="apellido"
+                            placeholder="Apellidos" required>
+                            <p class="text-danger" style="display:none" id="errorApellido">El largo del apellido debe ser
+                                superior a 2 </p>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <input class="form-control" type="email" name="email" id="email" placeholder="Email:"
+                            minlength="5" maxlength="25" required>
+                        <p class="text-danger" style="display:none">Campo invalido</p>
+                    </div>
+                    <div class="form-group">
+                     <div class="mb-3">
+                       <label for="" class="form-label"></label>
+                       <textarea class="form-control" name="msj" id="msj" rows="3"></textarea>
+                     </div>
+                        <p class="text-danger" style="display:none">Campo invalido</p>
+                    </div>
+                    <br>
+                    <div class="" id="box-send">
+                        <button class="btn btn-secondary w-100" id="btn-enviar" type="submit">Enviar</button>
+                    </div>
+                </form>
+            </div>
         </div>
-    </div>
-    <!--FOOTER-->
-    <footer id="footer">
-        <div class="footer-top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 col-md-6 footer-contact">
-                        <h3>METALDISEÑO LTDA<span>.</span></h3>
-                        <p>
-                            Sta. Inés 01559 <br>
-                            Quinta Normal, Región Metropolitana<br>
-                            Chile <br><br>
-                            <strong>Fono:</strong> +56 955566645<br>
-                            <strong>Email:</strong> proyectos@mdlimitada.cl<br>
-                        </p>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 footer-links">
-                        <h4> Links Útiles</h4>
-                        <ul>
-                            <li><i class="fas fa-angle-right"></i> <a href="index.html">Inicio</a></li>
-                            <li><i class="fas fa-angle-right"></i> <a href="Nosotros.html">¿Quiénes somos?</a></li>
-                            <li><i class="fas fa-angle-right"></i> <a href="index.html#works">Productos</a></li>
-                            <li><i class="fas fa-angle-right"></i> <a href="index.html#clients">Clientes</a></li>
-                            <li><i class="fas fa-angle-right"></i> <a href="index.html#contact">Contacto</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 footer-links">
-                        <h4>Productos</h4>
-                        <ul>
-                            <li><i class="fas fa-angle-right"></i> <a href="#">modificar</a></li>
-                            <li><i class="fas fa-angle-right"></i> <a href="#">modificar</a></li>
-                            <li><i class="fas fa-angle-right"></i> <a href="#">modificar</a></li>
-                            <li><i class="fas fa-angle-right"></i> <a href="#">modificar</a></li>
-                            <li><i class="fas fa-angle-right"></i> <a href="#">modificar</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 footer-links">
-                        <h4>Redes Sociales</h4>
-
-                        <div class="social-links mt-3">
-                            <a href="#" class="facebook"><i class="fab fa-facebook"></i>
-                                <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+        <!--FOOTER-->
+        <footer id="footer">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 footer-contact">
+                            <h3>METALDISEÑO LTDA<span>.</span></h3>
+                            <p>
+                                Sta. Inés 01559 <br>
+                                Quinta Normal, Región Metropolitana<br>
+                                Chile <br><br>
+                                <strong>Fono:</strong> +56 955566645<br>
+                                <strong>Email:</strong> proyectos@mdlimitada.cl<br>
+                            </p>
                         </div>
-                    </div>
 
+                        <div class="col-lg-3 col-md-6 footer-links">
+                            <h4> Links Útiles</h4>
+                            <ul>
+                                <li><i class="fas fa-angle-right"></i> <a href="index.html">Inicio</a></li>
+                                <li><i class="fas fa-angle-right"></i> <a href="Nosotros.html">¿Quiénes somos?</a></li>
+                                <li><i class="fas fa-angle-right"></i> <a href="index.html#works">Productos</a></li>
+                                <li><i class="fas fa-angle-right"></i> <a href="index.html#clients">Clientes</a></li>
+                                <li><i class="fas fa-angle-right"></i> <a href="index.html#contact">Contacto</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 footer-links">
+                            <h4>Productos</h4>
+                            <ul>
+                                <li><i class="fas fa-angle-right"></i> <a href="#">modificar</a></li>
+                                <li><i class="fas fa-angle-right"></i> <a href="#">modificar</a></li>
+                                <li><i class="fas fa-angle-right"></i> <a href="#">modificar</a></li>
+                                <li><i class="fas fa-angle-right"></i> <a href="#">modificar</a></li>
+                                <li><i class="fas fa-angle-right"></i> <a href="#">modificar</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 footer-links">
+                            <h4>Redes Sociales</h4>
+
+                            <div class="social-links mt-3">
+                                <a href="#" class="facebook"><i class="fab fa-facebook"></i>
+                                    <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="container py-4 creditos">
-            <div class="copyright">
-                &copy; Copyright <strong><span>METALDISEÑO LTDA</span></strong>.
-            </div>
-            <div class="credits">
+            <div class="container py-4 creditos">
+                <div class="copyright">
+                    &copy; Copyright <strong><span>METALDISEÑO LTDA</span></strong>.
+                </div>
+                <div class="credits">
 
-                Creado por <a href="https://github.com/P0cketbear">P0cketbear</a>
+                    Creado por <a href="https://github.com/P0cketbear">P0cketbear</a>
+                </div>
             </div>
-        </div>
-    </footer>
+        </footer>
 
 </body>
 <!--Jquery-->
@@ -381,5 +325,6 @@
 <script src="Recursos/Scripts/aos/aos.js"></script>
 <!--Sweetalert-->
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
 
 </html>

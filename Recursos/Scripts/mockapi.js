@@ -46,3 +46,35 @@
             }
           })
     }
+    function validarDatos() {
+      nombre = document.getElementById("nombre").value
+      apellido = document.getElementById("apellido").value
+      email = document.getElementById("email").value
+      msj = document.getElementById("msj").value
+      mensaje = "nombre:" + nombre + "apellido:" + apellido + "email:" + email +" msj: "+msj
+      errores = 0
+      if(nombre.length <2){
+          document.getElementById("errorNombre").style.display="block"
+          errores++
+      }else{
+          document.getElementById("errorNombre").style.display="none"
+      }
+      if(apellido.length <2){
+        document.getElementById("errorApellido").style.display="block"
+        errores++
+    }else{
+        document.getElementById("errorApellido").style.display="none"
+    }
+      if(errores>0){
+          document.getElementById("box-send").append("Uno de los campos es invalido")
+          Swal.fire({
+              icon: 'error',
+              title: 'Oops...',
+              text: '1 o más campos son invalidos',
+          })
+          return false
+      }else{
+          return true
+      }
+  
+  }
